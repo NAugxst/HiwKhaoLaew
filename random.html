@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุ่มอาหาร</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            background: #ffcc00;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .budget-input {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: white;
+        }
+        .budget-input input {
+            border: none;
+            width: 60px;
+            text-align: center;
+            font-size: 16px;
+            outline: none;
+        }
+        .budget-input span {
+            font-size: 16px;
+        }
+        .category-select {
+            width: 100%;
+            max-width: 150px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background: white;
+            cursor: pointer;
+        }
+        .random-btn {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .random-btn:hover {
+            background: #e65c00;
+        }
+
+        /* 📌 Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            .budget-input {
+                padding: 8px;
+            }
+            .budget-input input {
+                width: 50px;
+                font-size: 14px;
+            }
+            .budget-input span,
+            .random-btn,
+            .category-select {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="color: #ffffff;">สุ่มอาหาร</div>
+        <div class="content">
+            <div class="budget-input">
+                <span>งบ</span>
+                <input type="number">
+                <span>บาท</span>
+            </div>
+            <select class="category-select">
+                <option value="food">อาหาร</option>
+                <option value="drink">เครื่องดื่ม</option>
+                <option value="snack">ขนม</option>
+            </select>
+            <button class="random-btn">สุ่มเลย!</button>
+        </div>
+    </div>
+</body>
+</html>

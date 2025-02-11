@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เมนูอาหาร</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background-color: #f4f4f4;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .details {
+      text-align: center;
+      padding: 15px;
+      font-size: 16px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .price {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">รูปร้าน</div>
+    <div class="details">สถานะ: เปิด</div>
+    <div class="details">รายละเอียด: 2 ข้าว 25 ฿ | 3 ข้าว 30 ฿</div>
+    <div class="items">
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="อาหาร 1">
+        <div class="price">40 ฿</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="อาหาร 2">
+        <div class="price">50 ฿</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="อาหาร 3">
+        <div class="price">40 ฿</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100" alt="อาหาร 4">
+        <div class="price">50 ฿</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
